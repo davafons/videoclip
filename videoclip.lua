@@ -103,7 +103,7 @@ local function human_readable_time(seconds)
 end
 
 local function construct_filename()
-    local filename = mp.get_property("filename") -- filename without path
+    local filename = mp.get_property("media-title") -- filename without path
 
     filename = remove_extension(filename)
 
